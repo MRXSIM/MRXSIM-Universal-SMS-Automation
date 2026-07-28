@@ -1,0 +1,55 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Packaging artifacts
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+mrxsim.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Secrets — NEVER commit
+config.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials.json
+*.pypirc
+.pypirc
+
+# Test / coverage / tooling
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.cache/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Local scratch (root-level only — do not ignore package __init__.py)
+/_*.py
+/_*.graphql
+/_*.txt
+!requirements.txt
+!**/__init__.py

@@ -1,0 +1,9 @@
+# Prefer installing the package:
+#   pip install mrxsim
+#   pip install -e .
+#
+# Runtime dependency (also declared in pyproject.toml):
+requests>=2.31.0,<3
+
+# Optional CLI colors for mrxsim_client.py
+colorama>=0.4.6,<1

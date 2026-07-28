@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mrxsim"
+version = "1.0.2"
+description = "Official Python client for MRXSIM.COM — secure SMS number purchasing & OTP retrieval (zero-knowledge API)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "MRXSIM", email = "whomrxami@pm.me" },
+]
+maintainers = [
+    { name = "MRXSIM", email = "whomrxami@pm.me" },
+]
+keywords = [
+    "mrxsim",
+    "sms",
+    "otp",
+    "virtual-number",
+    "telegram",
+    "whatsapp",
+    "automation",
+    "api-client",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = [
+    "requests>=2.31.0,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "build>=1.2.0",
+    "twine>=5.0.0",
+]
+async = [
+    "aiohttp>=3.9.0,<4",
+]
+cli = [
+    "colorama>=0.4.6,<1",
+]
+
+[project.urls]
+Homepage = "https://mrxsim.com"
+Documentation = "https://mrxsim.com/docs"
+Repository = "https://github.com/MRXSIM/MRXSIM-Universal-SMS-Automation"
+"Bug Tracker" = "https://github.com/MRXSIM/MRXSIM-Universal-SMS-Automation/issues"
+
+[tool.setuptools.packages.find]
+include = ["mrxsim*"]
+exclude = ["tests*", "examples*"]
+
+[tool.setuptools.package-data]
+mrxsim = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

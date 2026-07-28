@@ -1,0 +1,10 @@
+{
+  "api_key": "REPLACE_WITH_YOUR_MRXSIM_API_KEY",
+  "base_url": "https://mrxsim.com",
+  "country": "england",
+  "service": "telegram",
+  "operator": "any",
+  "poll_interval_seconds": 3,
+  "poll_timeout_seconds": 600,
+  "request_timeout_seconds": 30
+}
